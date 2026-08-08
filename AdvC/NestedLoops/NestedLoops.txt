@@ -1,0 +1,6 @@
+Pattern: must do patterns problems before starting DSA.
+Why patterns are important whenever we talk about DSA like Dynamic programming , trees , graphs, array and binary searcch,
+here the loops are common everywhere in these topics, so we have to go with deep understand about loops how they works and we have to do master.
+to do master we have to do these patterns.
+-->these file of nested loops is containing of 21 patterns with using loops.
+

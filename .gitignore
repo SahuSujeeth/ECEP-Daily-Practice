@@ -1,0 +1,26 @@
+# Compiled C files
+*.o
+*.out
+*.exe
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
+
+# Debug files
+*.dSYM/
+*.stackdump
+
+# VS Code settings (optional)
+.vscode/
+
+# Temporary files
+*.tmp
+*.log
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
