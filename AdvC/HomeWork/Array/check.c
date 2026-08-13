@@ -78,12 +78,15 @@ int main ()
 {
     //  int num = 100;
     //  printf("%d %0 %x\n",num, num, num);
-     unsigned char ch;
-     for(ch = 060;ch >= 071 ; ch++)
-     {
-        printf("%d ",ch);
+    //  unsigned char ch;
+    //  for(ch = 060;ch >= 071 ; ch++)
+    //  {
+    //     printf("%d ",ch);
         
-     }
+    //  }
+    int i = 0xFFFFFFFF;
+    printf("%d",i+i);
+    
     
     // unsigned char a = 255;
     // unsigned char b = 257;
