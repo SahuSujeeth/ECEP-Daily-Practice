@@ -1,10 +1,16 @@
-#include<stdio.h>
+#include <stdio.h>
+int fun(int);
 int main()
 {
-    int  principle_amount, rate_of_interest, time_years;
-   // printf()
-    scanf("%d %d %d", &principle_amount, &rate_of_interest, &time_years);
-    int simple_interest = (principle_amount * rate_of_interest * time_years) / 100;
-    printf("%d",simple_interest);
     
+    int x,y;
+    x = 2;
+    y = fun(x);
+    
+    printf("%d\n",y);
+    return 0;
+}
+int fun(int a)
+{
+    return a + 1;
 }
