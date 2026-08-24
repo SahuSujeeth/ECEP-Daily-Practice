@@ -1,27 +1,24 @@
-#include <stdio.h>
-
-int main ()
+#include<stdio.h>
+void scan_array(int *ptr); //should be int *ptr
+void print_array(int *ptr); //should be int *ptr
+int main()
 {
-    int x = 10;
-    char *ptr = &x;
-    //printf("%d\n",*ptr);
-    
-    // int x=10;
-    // int *p;
-    // p = &x;
-    // printf("Value of x = %d\n",x)
-    // printf("Address of x = %d\n",*&x);//refenecer
-    // printf("Value store in p = %p\n",p);
-    // printf("Address of point variable p = %p\n",&p);
-    // printf("Value using pointer = %d\n",*p); //derefernece
-    // printf("size of x is  %zu\n",sizeof(x));
-    // printf("size of pointer is  %zu\n",sizeof(p));
-    // printf("size of pointer is  %zu\n",sizeof(*p));
-    // printf("size of pointer is  %zu\n",sizeof(*&x));
-    
-    // int x;
-    // int *ptr;
-    // x = 5;
-    // ptr = 5; //segmantation  fault ... can't be access by the user only access by the OS. If we are try to acces then it will so the segmantation fault.
-    return 0;
+ int arr[5];
+ scan_array(arr);
+ print_array(arr);
+ return 0;
+}
+void scan_array(int *ptr)
+{
+    printf("enter the array elements\n"); //ptr + i is now REAL pointer arthmatic - correct
+    for(int i=0;i<5;i++)
+    {
+        scanf("%d",ptr+i);
+    }
+}
+void print_array(int *ptr)
+{
+    printf("th elements are \n");
+    for(int i=0;i<5;i++)
+    printf("%d\n",*(ptr+i)); // dereferenced - printfs the value, not the address
 }
