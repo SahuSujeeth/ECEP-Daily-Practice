@@ -1,14 +1,27 @@
 #include <stdio.h>
-
-int main ()
+void endianess(char *ptr)
 {
-    int x = 0x123456;
-    char *ptr = (char*)&x;
+    *ptr = (char*)ptr;
     printf("%x\n",*(ptr+2));
-    int y = *(ptr+0);
-    if(y==0x56)
+   // int y = *(ptr+0);
+    if(*(ptr+0)== 0x56)
     printf("little indian\n");
     else
     printf("big liittel\n");
+}
+
+// }
+int main ()
+{
+    int x = 0x123456;
+    // char *ptr = (char*)&x;
+    // printf("%x\n",*(ptr+2));
+    // //int y = *(ptr+0);
+    // if(*(ptr+0)== 0x56)
+    // printf("little indian\n");
+    // else
+    // printf("big liittel\n");
+    endianess((char*)&x);
+    
     return 0;
 }
