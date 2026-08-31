@@ -11,8 +11,8 @@ int decimal(int n)
         int lastdigit = n % 10;
         return sum * 10 + lastdigit + decimal(n/10); 
     }
-    printf("%d\n",sum);
-    
+
+    // printf("%d\n",sum);  
 }
 int main ()
 {
