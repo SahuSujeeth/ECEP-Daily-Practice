@@ -1,24 +1,23 @@
 #include <stdio.h>
-int decimal(int n)
+int sumofdigit(int n)
 {
     static int sum = 0;
     if(n==0)
     {
         return 0;
     }
+
     else
     {
         int lastdigit = n % 10;
-        return sum * 10 + lastdigit + decimal(n/10); 
-    }
-
-    // printf("%d\n",sum);  
+        return sum * 10 + lastdigit + sumofdigit(n/10);
+         
+    }  
 }
 int main ()
 {
-   int result = decimal(12345);
+   int result = sumofdigit(12345);
    printf("%d\n",result);
-   //decimal(1234);
     
     return 0;
 }

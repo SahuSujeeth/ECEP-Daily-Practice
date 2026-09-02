@@ -1,57 +1,28 @@
 #include <stdio.h>
-
-void print_sort(int arr[], int size)
+int findLargest(int *arr, int n)
 {
-    int largest = arr[0];
-    for(int i=1;i<size;i++)
+    int largest = *(arr+0);
+    for(int i=1;i<n;i++)
     {
-       if(arr[i] > largest)
-       {
-           largest = arr[i];
-       }
-    }
-    int smallest = arr[0];
-    for(int i=1;i<size;i++)
-    {
-        if(arr[i] < smallest)
+        if(*(arr+i) > largest)
         {
-            smallest = arr[i];
+            largest = *(arr+i);
         }
     }
-    printf("After sorting: ");
-    for(int i=0;i<size;i++)
-    {
-        int second = largest;
-        for(int j=0;j<size;j++)
-        {
-            if(arr[j] > smallest && arr[j] < second)
-            {
-                second = arr[j];
-            }
-        }
-        printf("%d ",smallest);
-        smallest = second;
-    }
-    printf("\n");
+    return largest;
 }
-int main()
+int main ()
 {
-    int size, iter;
-    
-    printf("Enter the size of the array : ");
-    scanf("%d", &size);
-    
-    int arr[size];
-    
-    printf("Enter the %d elements\n",size);
-    for (iter = 0; iter < size; iter++)
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++)
     {
-        scanf("%d", &arr[iter]);
+        scanf("%d",&arr[i]);
     }
-    print_sort(arr, size);
-    printf("Original array values ");
-    for(int i=0;i<size;i++)
-    {
-        printf("%d ",arr[i]);
-    }
+    int result = findLargest(arr,n);
+    printf("Largesst element of array %d\n",result);
+    
+    
+    return 0;
 }
