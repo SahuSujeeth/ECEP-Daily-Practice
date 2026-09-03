@@ -1,9 +1,11 @@
 #include <stdio.h>
-int one2N(int a)
+void one2N(int a)
 {
     if(a == 0)
      return;
-    return 
+    one2N(a-1);
+    printf("%d\n",a);
+    
 }
 int main ()
 {
