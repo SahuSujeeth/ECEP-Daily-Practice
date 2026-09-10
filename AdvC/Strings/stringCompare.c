@@ -13,17 +13,24 @@
 //     }
 //     return s[i] - s1[i];
 //  }
-char mystrcmp(char s[], char s1[])
-{
-    char result = strcmp(s,s1);
-    return result;
-}
+// char mystrcmp(char s[], char s1[])
+// {
+//     char result = strcmp(s,s1);
+//     return result;
+// }
  int main ()
  {
-    char s[] = "sahu";
-    char s1[] = "sahua";
+   //  char s[] = "ABCDE";
+   //  char s1[] = "ABCDEF";
+   char *str1;
+   printf("Enter the stirng1:");
+   scanf(" %s",str1);
+   char *str2;
+   printf("Enter the stirng2:");
+   scanf(" %s",str2);
+   
     
-    printf("%d\n",mystrcmp(s,s1));
+    printf("%d\n",strcmp(str1,str2));
     
    // printf("%d\n",strcmp(s,s1));
     //printf("%d %d\n",'h','n');
