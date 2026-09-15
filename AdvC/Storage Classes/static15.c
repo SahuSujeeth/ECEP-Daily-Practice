@@ -2,10 +2,11 @@
 
 int main ()
 {
-    static int i=5;
+    static int  i=5;
     if(--i)
     {
-         return main();
+        main();
+        //return main();
     }
     printf("i %d\n",i);
     
