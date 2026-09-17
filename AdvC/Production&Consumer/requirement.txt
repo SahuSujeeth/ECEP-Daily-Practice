@@ -1,0 +1,56 @@
+Requirements:
+Declare the following as global variables:
+capacity = 10 — maximum number of items that can be stored.
+produced — number of items currently available.
+Any other variables required.
+Create the following functions:
+void produce()
+void consume()
+void display()
+In produce():
+Check whether the storage is full.
+If produced == 10, display:
+"Storage Full! Consumer must consume before producing again."
+Do not increase the count when storage is full.
+Otherwise, produce one item and increase produced.
+In consume():
+Check whether an item is available.
+If no item is available, display:
+"No items available for consumption."
+Otherwise, consume one item and decrease produced.
+In main(), display a menu repeatedly using a switch statement:
+Produce
+Consume
+Display Available Items
+Exit
+The program should continue running until the user selects Exit.
+Important condition:
+The producer must not produce more than 10 items. Once the count reaches 10, the producer must wait for the consumer to consume at least one item before another item can be produced.
+sample output
+Produce
+Consume
+Display
+Exit
+
+Enter choice: 1
+Item produced. Available items = 1
+
+Enter choice: 1
+Item produced. Available items = 2
+
+...
+
+Enter choice: 1
+Item produced. Available items = 10
+
+Enter choice: 1
+Storage Full! Consumer must consume before producing again.
+
+Enter choice: 2
+Item consumed. Available items = 9
+
+Enter choice: 1
+Item produced. Available items = 10
+
+Enter choice: 4
+Exiting program...
