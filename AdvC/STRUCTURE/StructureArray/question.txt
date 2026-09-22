@@ -1,0 +1,75 @@
+Array of Structures – Practice Questions
+The questions progress from basic array-of-structures operations to functions, initialization, searching, comparison, and updating. Use functions in every question.
+Q1. Store and Display Student Details
+Create a structure Student containing roll_no, name, and marks.
+Read the details of 5 students into an array of structures.
+Write a function displayStudents() to display all student details.
+
+Q2. Display Products in Tabular Format
+Create a structure Product containing product_id, product_name, and price. 
+Read details of 5 products and pass the array of structures to a function displayProducts(). 
+Display all products in a tabular format.
+
+Q3. Search for a Student
+Create a structure Student containing roll_no, name, and marks. 
+Read details of 5 students. 
+Write a function searchStudent() that accepts the array of structures and a roll number. 
+Search for the student and display their details. If the roll number is not found, display 'Student not found'.
+
+Q4. Find the Student with Highest Marks
+Create a structure Student containing roll_no, name, and marks. 
+Read details of 5 students. Write a function findTopper() to find and display the student who has scored the highest marks. 
+Perform the comparison inside the function.
+
+ 
+Q5. Initialize and Display Employee Details
+Create a structure Employee containing id, name, and salary. 
+Initialize an array of 4 employees directly while declaring it. 
+Write a function displayEmployees() to display all employee details in tabular format. 
+Do not use scanf().
+
+
+Q6. Calculate Total and Average Marks
+Create a structure Student containing roll_no, name, maths, science, and computer. 
+Initialize details of 5 students using an array of structures. 
+Write a function calculateResult() that calculates the total and average marks of each student and displays the result in tabular format.
+
+
+Q7. Display a Product Table
+Create a structure Product containing product_id, product_name, price, and quantity. 
+Initialize the following 5 products using an array of structures: 101 Pen 20 10; 102 Book 50 5; 103 Bag 800 3; 104 Bottle 150 8; 105 Pencil 10 20. 
+Write a function displayProducts() to print the data in tabular format. No input required.
+
+
+Q8. Update Product Price
+Create a structure Product containing product_id, product_name, and price. 
+Initialize 5 products using an array of structures. Write a function updatePrice() that accepts the array of structures and increases the price of each product by 10%. 
+After updating, call displayProducts() to display the updated table.
+
+
+Q9. Find the Most Expensive Book
+Create a structure Book containing book_id, title, and price. 
+Initialize 5 books using an array of structures. 
+Write a function findExpensiveBook() to find the book having the highest price and display its details.
+
+
+Q10. Count Products Based on Price
+Create a structure Product containing product_id, product_name, and price. 
+Initialize 6 products. Write a function countProducts() that counts and displays the number of products with price greater than 500 and the number of products with price less than or equal to 500.
+
+
+Key Pattern to Practice
+struct Student { int roll; char name[20]; float marks; };
+void display(struct Student s[], int n)
+{
+    // work with array
+}
+
+int main()
+{
+    struct Student s[5];
+    // input
+    display(s, 5);
+    return 0;
+}
+Remember: s[i] represents one complete structure, while s[i].marks represents the marks member of the i-th structure.
