@@ -1,10 +1,11 @@
 #include <stdio.h>
-struct employee
+struct 
 {
     char name[20];
     int id;
     int salary;
 };
+void display_details(struct employee)
 int main ()
 {
     struct employee s1;

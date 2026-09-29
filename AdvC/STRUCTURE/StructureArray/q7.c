@@ -26,5 +26,6 @@ int main ()
     int size = 5;
     struct product p[5] = {{101,"Pen",20,10},{102,"Book",50,5},{103,"Bag",800,3},{104,"Bottle",150,8},{105,"Pencil",10,20}};
     display_details(p,size);
+     printf("%zu\n",sizeof(p));
     return 0;
 }

@@ -21,6 +21,7 @@ int main()
         scanf("%d",&s[i].marks);
     }
     search_student(s,size);
+     printf("%zu\n",sizeof(s));
     return 0;
 
 }

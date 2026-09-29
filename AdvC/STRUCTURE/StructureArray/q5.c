@@ -13,6 +13,7 @@ int main()
     // scanf("%d",&size);
     struct employee s[4]={{123,"dayakar",45000},{124,"rajasekhar",49000},{125,"sahusujeeth",57000},{126,"harshavardhan",250000}};
     display_employees(s,size);
+     printf("%zu\n",sizeof(s));
     return 0;
 }
 void display_employees(struct employee s[],int size)

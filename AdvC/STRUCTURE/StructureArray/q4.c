@@ -21,6 +21,7 @@ int main()
         scanf("%d",&s[i].marks);
     }
     display_highest_marks(s,size);
+     printf("%zu\n",sizeof(s));
     return 0;
 }
 void display_highest_marks(struct student s[],int size)

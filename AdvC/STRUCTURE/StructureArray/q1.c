@@ -24,15 +24,17 @@ int main ()
     printf("Enter the size: ");
     scanf("%d",&size);
     struct student s1[size];
-    for(int i=0;i<size;i++)
-    {
-        printf("Enter the name %d:",i+1);
-        scanf("%s",s1[i].name);
-        printf("Enter the roll number %d: ",i+1);
-        scanf("%d",&s1[i].roll_no);
-        printf("Enter the marks %d: ",i+1);
-        scanf("%d",&s1[i].marks);  
-    }
-    display_details(s1,size);
+    // for(int i=0;i<size;i++)
+    // {
+    //     printf("Enter the name %d:",i+1);
+    //     scanf("%s",s1[i].name);
+    //     printf("Enter the roll number %d: ",i+1);
+    //     scanf("%d",&s1[i].roll_no);
+    //     printf("Enter the marks %d: ",i+1);
+    //     scanf("%d",&s1[i].marks);  
+    // }
+    //display_details(s1,size);
+    printf("%zu\n",sizeof(s1));
+    
     return 0;
 }

@@ -31,6 +31,7 @@ int main ()
     struct product p[5] = {{101,"Pen",20},{102,"Book",50},{103,"Bag",800},{104,"Bottle",150},{105,"Pencil",10}};
     updatePrice(p,size);
     display_details(p,size);
+     printf("%zu\n",sizeof(p));
    
     return 0;
 }

@@ -31,5 +31,6 @@ int main ()
     struct student s1[5] = {{"Daya",1,70,60,80}, {"Raj",2,60,70,70}, {"Harsha",3,50,60,70}, {"Ysuf",4,70,60,90}, {"Sahu",5,70,70,80}};
     
     calculateResults(s1,size);
+     printf("%zu\n",sizeof(s1));
     return 0;
 }

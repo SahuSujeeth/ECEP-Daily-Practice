@@ -29,6 +29,7 @@ int main ()
     int size = 5;
     struct Book b[5] = {{101,"Spirit",2000},{102,"Billa",1000},{103,"Pokiri",1500},{104,"Businessman",2200},{105,"Hello",800}};
     findExpensiveBook(b,size);
+     printf("%zu\n",sizeof(b));
     
     return 0;
 }

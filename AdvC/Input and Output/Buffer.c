@@ -1,10 +1,11 @@
 #include <stdio.h>
-
-int main ()
+int main()
 {
-    printf("Processing");
-    // ... a long-running task that takes 10 seconds ...
-    // printf(" Done!");
-    // printf(" Now encountered by newline now its flushed\n!");
+    int x, y;
+    printf("Enter First Integer: \n");
+    scanf("%d", &x);
+    printf("Enter Second Integer: \n");
+    scanf("%d", &y);
+    printf("Multiplication is %d", x * y);
     return 0;
 }
