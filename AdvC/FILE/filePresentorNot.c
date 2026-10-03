@@ -5,10 +5,10 @@ int main ()
     int num;
     char str[10];
     FILE *fp;
-    fp = fopen("file1.txt","w");
+    fp = fopen("fil.txt","r");
     if(fp == NULL)
     {
-        printf("file is not present\n");
+        perror("file is not present\n");
     }
     else
     {
