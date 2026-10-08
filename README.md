@@ -10,44 +10,44 @@ Daily practice for C programming, Linux internals and microcontrollers (Emertxe 
 
 | Folder | What is inside |
 |--------|----------------|
-| Keywords | C keywords and examples |
-| Storage Classes | auto, static, extern, register |
-| Strings | String handling programs |
-| STRUCTURE | Structures and related programs |
-| Bitwise | Bitwise operators and bit tricks |
-| Input and Output | Input and output programs |
-| FILE | File handling programs |
-| Memory Layout | How a C program is laid out in memory |
-| DMA | Dynamic memory allocation |
+| [Keywords](AdvC/Keywords) | C keywords and examples |
+| [storage-classes](AdvC/storage-classes) | auto, static, extern, register |
+| [strings](AdvC/strings) | String handling programs |
+| [STRUCTURE](AdvC/STRUCTURE) | Structures and related programs |
+| [bitwise](AdvC/bitwise) | Bitwise operators and bit tricks |
+| [Input and Output](AdvC/Input%20and%20Output) | Input and output programs |
+| [file](AdvC/file) | File handling programs |
+| [memory-layout](AdvC/memory-layout) | How a C program is laid out in memory |
+| [dma](AdvC/dma) | Dynamic memory allocation |
 
 ### Practice
 
 | Folder | What is inside |
 |--------|----------------|
-| Leetcode | Daily LeetCode problems in C, grouped by pattern (has its own README) |
-| Hackerank | HackerRank problems |
-| GFG | GeeksforGeeks problems |
-| NestedLoops | Nested loop programs |
-| Practice | General practice programs |
-| Pradctice Questions | Practice questions |
+| [leetcode](AdvC/leetcode) | Daily LeetCode problems in C, grouped by pattern ([plan and notes](AdvC/leetcode/README.md)) |
+| [hackerrank](AdvC/hackerrank) | HackerRank problems |
+| [gfg](AdvC/gfg) | GeeksforGeeks problems |
+| [nestedloop](AdvC/nestedloop) | Nested loop programs |
+| [practice](AdvC/practice) | General practice programs |
+| [practice-questions](AdvC/practice-questions) | Practice questions |
 
 ### Projects
 
 | Folder | What is inside |
 |--------|----------------|
-| Projects | Mini projects in C |
-| Pratice-Projects | Practice projects |
-| Production&Consumer | Producer and consumer program |
+| [project](AdvC/project) | Mini projects in C |
+| [practice-projects](AdvC/practice-projects) | Practice projects |
+| [producer-consumer](AdvC/producer-consumer) | Producer and consumer program |
 
 ### Class Work
 
 | Folder | What is inside |
 |--------|----------------|
-| Assignments | Course assignments |
-| HomeWork | Homework programs |
-| QUIZ | Quiz questions and answers |
-| Objective | Objective questions |
-| check | Checks and test programs |
+| [assignments](AdvC/assignments) | Course assignments |
+| [HomeWork](AdvC/HomeWork) | Homework programs |
+| [QUIZ](AdvC/QUIZ) | Quiz questions and answers |
+| [objective](AdvC/objective) | Objective questions |
+| [check](AdvC/check) | Checks and test programs |
 
 ---
 
@@ -55,5 +55,5 @@ Daily practice for C programming, Linux internals and microcontrollers (Emertxe 
 
 | Folder | What is inside |
 |--------|----------------|
-| LS | LS command practice |
-| WordCount | Word count project |
+| [LS](LS) | LS command practice |
+| [WordCount](WordCount) | Word count project |
