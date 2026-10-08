@@ -1,28 +1,59 @@
-# ECEP — Daily Practice Log
+# ECEP Daily Practice
 
-This repository documents my day-to-day work through the **Emertxe Embedded Career Enhancement Program (ECEP)**, a 6-month intensive training program preparing me for a firmware/embedded systems engineering role.
+Daily practice for C programming, Linux internals and microcontrollers (Emertxe ECEP).
 
-I commit here regularly as I work through each module — this repo is both a practice log and a record of consistent, hands-on learning.
+---
 
-## Structure
+## AdvC (Advanced C)
 
-| Folder | Description |
-|---|---|
-| `AdvC/` | Advanced C programming — classwork, homework, and assignments (loops, arrays, pointers, etc.) |
-| `DSA/` | Data Structures & Algorithms practice |
-| `LI/` | Linux Internals and Networking |
-| `LS/` | Linux Systems |
-| `MC/` | Microcontrollers |
-| `Leetcode/` | Problem-solving practice on LeetCode-style questions |
-| `NestedLoops/` | Focused practice on nested loop problems |
-| `Projects/` | Larger hands-on projects built during the program |
-| `WordCount/` | Word count and related string-processing exercises |
+### Topics
 
-## About ECEP
+| Folder | What is inside |
+|--------|----------------|
+| Keywords | C keywords and examples |
+| Storage Classes | auto, static, extern, register |
+| Strings | String handling programs |
+| STRUCTURE | Structures and related programs |
+| Bitwise | Bitwise operators and bit tricks |
+| Input and Output | Input and output programs |
+| FILE | File handling programs |
+| Memory Layout | How a C program is laid out in memory |
+| DMA | Dynamic memory allocation |
 
-ECEP covers Linux Systems, Advanced C, Data Structures, C++, Basic Electronics, Microcontrollers, Linux Internals & Networking, Embedded Linux on ARM, and Qt — building toward a firmware/embedded systems engineering role.
+### Practice
 
-## Author
+| Folder | What is inside |
+|--------|----------------|
+| Leetcode | Daily LeetCode problems in C, grouped by pattern (has its own README) |
+| Hackerank | HackerRank problems |
+| GFG | GeeksforGeeks problems |
+| NestedLoops | Nested loop programs |
+| Practice | General practice programs |
+| Pradctice Questions | Practice questions |
 
-**Sahu Sujeeth**
-[Portfolio](https://sahusujeeth.vercel.app) · [LinkedIn](#) · [GitHub](https://github.com/SahuSujeeth)
+### Projects
+
+| Folder | What is inside |
+|--------|----------------|
+| Projects | Mini projects in C |
+| Pratice-Projects | Practice projects |
+| Production&Consumer | Producer and consumer program |
+
+### Class Work
+
+| Folder | What is inside |
+|--------|----------------|
+| Assignments | Course assignments |
+| HomeWork | Homework programs |
+| QUIZ | Quiz questions and answers |
+| Objective | Objective questions |
+| check | Checks and test programs |
+
+---
+
+## Other Folders
+
+| Folder | What is inside |
+|--------|----------------|
+| LS | LS command practice |
+| WordCount | Word count project |
