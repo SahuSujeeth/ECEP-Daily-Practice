@@ -101,3 +101,8 @@ One problem a day, solved in C, grouped by pattern.
 - Pattern: Running total.
 - Trick: Find the total first. Then right sum = total - left sum - current number.
 - Time: O(n). Space: O(1).
+
+### 344 - Reverse String
+- Pattern: Two pointers.
+- Trick: One pointer at each end. Swap, then move both toward the middle until they meet.
+- Time: O(n). Space: O(1).
