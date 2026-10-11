@@ -106,3 +106,9 @@ One problem a day, solved in C, grouped by pattern.
 - Pattern: Two pointers.
 - Trick: One pointer at each end. Swap, then move both toward the middle until they meet.
 - Time: O(n). Space: O(1).
+
+### 125 - Valid Palindrome
+- Pattern: Two ends compare (clean copy).
+- Trick: Keep only letters and numbers in lowercase, then compare from both ends.
+- Time: O(n). Space: O(n).
+- Memory rule: I do not return the copy, so I free it.
