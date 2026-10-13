@@ -112,3 +112,8 @@ One problem a day, solved in C, grouped by pattern.
 - Trick: Keep only letters and numbers in lowercase, then compare from both ends.
 - Time: O(n). Space: O(n).
 - Memory rule: I do not return the copy, so I free it.
+
+### 283 - Move Zeroes
+- Pattern: Two pointers (slow and fast).
+- Trick: The fast pointer walks the array. The slow pointer marks where the next non-zero goes. Swap when the fast pointer finds a non-zero.
+- Time: O(n). Space: O(1).
