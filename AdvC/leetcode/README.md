@@ -117,3 +117,15 @@ One problem a day, solved in C, grouped by pattern.
 - Pattern: Two pointers (slow and fast).
 - Trick: The fast pointer walks the array. The slow pointer marks where the next non-zero goes. Swap when the fast pointer finds a non-zero.
 - Time: O(n). Space: O(1).
+
+### 26 - Remove Duplicates from Sorted Array
+- Pattern: Two pointers (slow and fast).
+- Trick: The array is sorted, so duplicates are next to each other. The slow pointer marks the last unique number. Copy a number forward only when it is different.
+- Time: O(n). Space: O(1).
+
+### 242 - Valid Anagram
+- Pattern: Counting (frequency array).
+- Trick: Use 26 boxes, one for each letter. Add 1 for each letter of `s`, subtract 1 for each letter of `t`. If every box is 0, it is an anagram. The box for a letter is `ch - 'a'`.
+- Time: O(n). Space: O(1).
+- Mistake 1: I first sorted both strings. It is correct, but it is O(n^2), and LeetCode gave Time Limit Exceeded.
+- Mistake 2: I used `s[i]` in both the add line and the subtract line. They cancelled out, so the answer was always `true`. The subtract line must use `t[i]`.
