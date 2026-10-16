@@ -129,3 +129,9 @@ One problem a day, solved in C, grouped by pattern.
 - Time: O(n). Space: O(1).
 - Mistake 1: I first sorted both strings. It is correct, but it is O(n^2), and LeetCode gave Time Limit Exceeded.
 - Mistake 2: I used `s[i]` in both the add line and the subtract line. They cancelled out, so the answer was always `true`. The subtract line must use `t[i]`.
+
+### 387 - First Unique Character in a String
+- Pattern: Counting (frequency array).
+- Trick: First pass: count every letter in 26 boxes. Second pass: walk the string in order and return the first index whose count is 1.
+- Time: O(n). Space: O(1).
+- Mistake: I used `char` for the count boxes. A `char` can overflow on long strings. Use `int`.
