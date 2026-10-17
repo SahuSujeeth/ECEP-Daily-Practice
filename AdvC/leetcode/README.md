@@ -135,3 +135,9 @@ One problem a day, solved in C, grouped by pattern.
 - Trick: First pass: count every letter in 26 boxes. Second pass: walk the string in order and return the first index whose count is 1.
 - Time: O(n). Space: O(1).
 - Mistake: I used `char` for the count boxes. A `char` can overflow on long strings. Use `int`.
+
+### 136 - Single Number
+- Pattern: Bit tricks (XOR).
+- Trick: A number XOR itself is 0, and a number XOR 0 stays the same. XOR all the numbers together. Every pair cancels out, and only the single number is left.
+- Time: O(n). Space: O(1).
+- Clue: "Every number appears twice except one," and the O(1) space rule.
