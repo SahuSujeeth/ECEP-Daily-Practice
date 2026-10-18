@@ -141,3 +141,10 @@ One problem a day, solved in C, grouped by pattern.
 - Trick: A number XOR itself is 0, and a number XOR 0 stays the same. XOR all the numbers together. Every pair cancels out, and only the single number is left.
 - Time: O(n). Space: O(1).
 - Clue: "Every number appears twice except one," and the O(1) space rule.
+
+### 191 - Number of 1 Bits
+- Pattern: Bit tricks (bit mask).
+- Trick: Make a mask with only bit `i` on (`1u << i`). Then `n & mask` is non-zero only if bit `i` of `n` is 1. Check all 32 positions and count.
+- Time: O(1), because the loop always runs 32 times. Space: O(1).
+- Note: Use `unsigned int mask = 1u << i`. A plain `1 << 31` shifts into the sign bit of a signed `int`, which is undefined behavior in C.
+- Clue: The problem asks to count the 1 bits in the binary form of a number.
