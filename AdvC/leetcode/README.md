@@ -148,3 +148,10 @@ One problem a day, solved in C, grouped by pattern.
 - Time: O(1), because the loop always runs 32 times. Space: O(1).
 - Note: Use `unsigned int mask = 1u << i`. A plain `1 << 31` shifts into the sign bit of a signed `int`, which is undefined behavior in C.
 - Clue: The problem asks to count the 1 bits in the binary form of a number.
+
+### 231 - Power of Two
+- Pattern: Bit tricks (power of two has exactly one 1 bit).
+- Trick: My solution divided by 2 until I reached 1, and returned false if I met an odd number. The bit way is `n > 0 && (n & (n - 1)) == 0`, because `n - 1` removes the lowest 1 bit.
+- Time: O(log n) for my division loop, O(1) for the bit way. Space: O(1).
+- Mistake: For `n = 0`, my loop ran forever, because `0 / 2` is still 0. I fixed it with `if (n <= 0) return false;`.
+- Clue: The question asks if a number is a power of two, so the binary form has only one 1 bit.
