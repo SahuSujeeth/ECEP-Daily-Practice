@@ -155,3 +155,11 @@ One problem a day, solved in C, grouped by pattern.
 - Time: O(log n) for my division loop, O(1) for the bit way. Space: O(1).
 - Mistake: For `n = 0`, my loop ran forever, because `0 / 2` is still 0. I fixed it with `if (n <= 0) return false;`.
 - Clue: The question asks if a number is a power of two, so the binary form has only one 1 bit.
+
+### 338 - Counting Bits
+- Pattern: Bit tricks (bit mask).
+- Trick: For every number `i` from 0 to `n`, check all 32 bits with `i & (1u << j)` and count the 1s. Save each count in the result array.
+- Time: O(32 x n), which is O(n). Space: O(n) for the result array.
+- Mistake: I wrote `malloc(sizeof(n + 1))`. That gives only 4 bytes, so my loop wrote past the end of the array. The right way is `malloc((n + 1) * sizeof(int))`.
+- Clue: The question asks for the count of 1 bits for every number from 0 to `n`.
+
