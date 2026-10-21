@@ -163,3 +163,9 @@ One problem a day, solved in C, grouped by pattern.
 - Mistake: I wrote `malloc(sizeof(n + 1))`. That gives only 4 bytes, so my loop wrote past the end of the array. The right way is `malloc((n + 1) * sizeof(int))`.
 - Clue: The question asks for the count of 1 bits for every number from 0 to `n`.
 
+### 326 - Power of Three
+- Pattern: Bit tricks / number checks (same idea as Power of Two).
+- Trick: A power of three can be divided by 3 again and again until it reaches 1. If `n` is zero or negative, return false. If I meet a number that is not divisible by 3 before reaching 1, return false.
+- Time: O(log n). Space: O(1).
+- Clue: The question asks if a number is a power of a base, so keep dividing by that base.
+
