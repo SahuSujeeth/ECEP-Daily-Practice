@@ -175,3 +175,10 @@ One problem a day, solved in C, grouped by pattern.
 - Time: O(log n). Space: O(1).
 - Clue: The question asks if a number is a power of a base, so keep dividing by that base.
 
+### 704 - Binary Search
+- Pattern: Binary search.
+- Trick: The array is sorted. Keep `low` and `high`, and check the middle. If the middle is too small, move `low` to `mid + 1`. If it is too big, move `high` to `mid - 1`. Each step removes half of the array.
+- Time: O(log n). Space: O(1).
+- Note: A safer middle is `low + (high - low) / 2`, because it avoids overflow.
+- Clue: The array is sorted, and the problem asks for O(log n).
+
