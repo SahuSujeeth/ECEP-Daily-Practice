@@ -2,9 +2,11 @@
 struct S1
 {
     char c1;
-    int a;
-    char c2;
-    //double t;
+    char a;
+    int c2;
+    short t;
+    int n;
+    char chd;
 };
 // struct S2
 // {

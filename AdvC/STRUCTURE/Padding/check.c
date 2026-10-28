@@ -11,8 +11,5 @@ int main ()
 {
     struct student s1;
     printf("%zu\n",sizeof(s1));
-    
-    
-    
     return 0;
 }
