@@ -1,0 +1,5 @@
+/*
+//This is also same works like structure only but in the memory this is shared memory by over write
+highest memmory will be shared for all variables.
+==> what is the use of this??
+    -> Any one variable if u want to use then go through the union otherwise structure is ok

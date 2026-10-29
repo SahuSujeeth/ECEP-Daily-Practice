@@ -1,0 +1,3 @@
+TYPEDEF -> Is used for create a new for existing name.
+Difference Between TYPEDEF vs MACRO :
+    -> MACRO will just replace but TYPEDEF will not replace it is understand by the compiler
