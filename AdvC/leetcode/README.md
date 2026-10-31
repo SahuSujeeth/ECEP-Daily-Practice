@@ -182,3 +182,28 @@ One problem a day, solved in C, grouped by pattern.
 - Note: A safer middle is `low + (high - low) / 2`, because it avoids overflow.
 - Clue: The array is sorted, and the problem asks for O(log n).
 
+### 35 - Search Insert Position
+- Pattern: Binary search.
+- Trick: Do a plain binary search like Problem 704. If the target is not found, the place where `low` stops is the insert position.
+- Time: O(log n). Space: O(1).
+- Mistake: My first try had an extra check, `nums[mid - 1]`, which reads outside the array when `mid` is 0. Extra checks inside the loop are not needed.
+- Clue: The array is sorted, and the problem asks for O(log n).
+
+### 69 - Sqrt(x)
+- Pattern: Binary search on the answer.
+- Trick: The answer is between 0 and `x`. If `mid * mid <= x`, save `mid` and search the right side. Otherwise, search the left side. Use `long long` for the multiplication so it does not overflow.
+- Time: O(log x). Space: O(1).
+- Clue: I need the biggest number whose square is not bigger than `x`. The answers are in order, so binary search works.
+
+### 9 - Palindrome Number
+- Pattern: Math (reverse the digits).
+- Trick: Build the reversed number with `x % 10` and `x / 10`, then compare it with the original. Use `long long` for the reversed number to avoid overflow.
+- Time: O(log x). Space: O(1).
+- Clue: The problem asks if a number reads the same from both sides.
+
+### 121 - Best Time to Buy and Sell Stock
+- Pattern: One pass with a running minimum.
+- Trick: Walk through the days once. Keep the cheapest price so far (`minPrice`) and the best profit so far. On each day, profit is today's price minus `minPrice`.
+- Time: O(n). Space: O(1).
+- Mistake: My first try found the cheapest day of the whole array. That fails when the cheapest day comes late, because I must buy before I sell.
+- Clue: I must buy before I sell, so I only need to know the past prices.
