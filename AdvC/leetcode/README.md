@@ -207,3 +207,9 @@ One problem a day, solved in C, grouped by pattern.
 - Time: O(n). Space: O(1).
 - Mistake: My first try found the cheapest day of the whole array. That fails when the cheapest day comes late, because I must buy before I sell.
 - Clue: I must buy before I sell, so I only need to know the past prices.
+
+### 485 - Max Consecutive Ones
+- Pattern: Running counter with reset.
+- Trick: Keep a counter for the current run of 1s. Add 1 on a 1, and reset to 0 on a 0. Keep the biggest value the counter reached.
+- Time: O(n). Space: O(1).
+- Clue: The word "consecutive" means a run in a row.
