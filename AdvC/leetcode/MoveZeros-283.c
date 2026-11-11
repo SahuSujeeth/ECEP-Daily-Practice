@@ -1,5 +1,5 @@
 #include <stdio.h>
-int  moveZeors(int arr[], int size)
+void  moveZeors(int arr[], int size)
 {
     int zerosIndex = 0;
     for(int i=0;i<size;i++)
@@ -12,7 +12,6 @@ int  moveZeors(int arr[], int size)
             zerosIndex++;
         }
     }
-    return zerosIndex;
 }
 int main ()
 {
@@ -24,15 +23,13 @@ int main ()
     {
         scanf("%d",&arr[i]);
     }
-    int returnIndex =  moveZeors(arr,size);
-    printf("%d\n",returnIndex);
+    moveZeors(arr,size);
     
-    for(int i=0; i< returnIndex;i++)
+    for(int i=0; i< size;i++)
     {
         printf("%d ",arr[i]);
         
     }
-    
     
     return 0;
 }
