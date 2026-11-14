@@ -30,8 +30,8 @@ int missingNumber(int arr[], int n)
 }
 int main ()
 {
-    int arr[] = {-1,0,1,1,2,2,4};
-    int n = 7;
+    int arr[] = {2,3,4,7,11};
+    int n = 5;
     int ans = missingNumber(arr,n);
     printf("%d\n",ans);
     return 0;

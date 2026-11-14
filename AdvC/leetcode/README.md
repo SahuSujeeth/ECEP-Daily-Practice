@@ -213,3 +213,18 @@ One problem a day, solved in C, grouped by pattern.
 - Trick: Keep a counter for the current run of 1s. Add 1 on a 1, and reset to 0 on a 0. Keep the biggest value the counter reached.
 - Time: O(n). Space: O(1).
 - Clue: The word "consecutive" means a run in a row.
+
+### 66 - Plus One
+- Pattern: Array and math (carry from the right).
+- Trick: Walk from the last digit to the first. If a digit is less than 9, add 1 and stop. If it is 9, make it 0 and carry on to the left. If every digit was 9, make a new array that is one longer, with a 1 at the front.
+- Time: O(n). Space: O(n) for the new array.
+- Memory rule: The caller frees the array, so the returned array must be malloced, and `*returnSize` must be set in both cases.
+- Clue: A number stored as an array of digits, and "add one" means handle the carry.
+
+### 1539 - Kth Missing Positive Number
+- Pattern: Counting through the numbers with an array index.
+- Trick: Count the numbers 1, 2, 3 and so on. If the number matches `arr[i]`, it is not missing, so move `i` forward. Otherwise it is missing, so add 1 to `count`. When `count` reaches `k`, that number is the answer. If the array runs out first, the rest of the missing numbers come right after, so the answer is `missing_number + (k - count) - 1`.
+- Time: O(n + k). Space: O(1).
+- Mistake 1: My loop stopped when the array ended, but the answer can be bigger than every number in the array.
+- Mistake 2: There was no `return` after the loop. LeetCode gave a compile error: "control reaches end of non-void function".
+- Clue: The array is sorted, and I need the k-th number that is not in it.
