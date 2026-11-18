@@ -228,3 +228,10 @@ One problem a day, solved in C, grouped by pattern.
 - Mistake 1: My loop stopped when the array ended, but the answer can be bigger than every number in the array.
 - Mistake 2: There was no `return` after the loop. LeetCode gave a compile error: "control reaches end of non-void function".
 - Clue: The array is sorted, and I need the k-th number that is not in it.
+
+### 448 - Find All Numbers Disappeared in an Array
+- Pattern: Counting (frequency array).
+- Trick: All numbers are in the range 1 to n, so use n boxes. Box x - 1 counts the number x. The boxes that stay 0 are the missing numbers. I reused the same array for the answer, because `count` is never bigger than `i`.
+- Time: O(n). Space: O(n).
+- Mistake: My first try sorted with a slow bubble sort, and the loop got stuck on duplicates. It also had no `*returnSize` and no `return`.
+- Clue: Every number is between 1 and n, and the array has n numbers.
